@@ -32,7 +32,8 @@
  * @see <a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes"
  *      >List of HTTP status codes</a>
  */
-typedef enum
+
+typedef NS_ENUM(NSUInteger, HTTPStatusCode) {
 {
     /*--------------------------------------------------
      * 1xx Informational
@@ -575,8 +576,7 @@ typedef enum
      * 599 Network connect timeout error (Unknown).
      */
     kHTTPStatusCodeNetworkConnectTimeoutError = 599
-}
-HTTPStatusCode;
+};
 
 
 #endif
